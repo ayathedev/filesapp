@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 overflow-hidden select-none;
+    font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Xbox-style Focus Ring */
+  [tabindex="0"]:focus {
+    outline: none;
+    @apply ring-4 ring-blue-500 ring-offset-4 ring-offset-slate-50 transition-all duration-200  z-50;
+    box-shadow: none;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 rounded-full border-2 border-transparent bg-clip-padding;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-400;
+  }
+}
+
+@layer components {
+  .xbox-prompt {
+    @apply flex items-center gap-1.5 px-2 py-1 bg-slate-100 rounded-md border border-slate-200 text-[10px] font-bold tracking-tight text-slate-400;
+  }
+  
+  .btn-icon-a { @apply w-4 h-4 rounded-full bg-emerald-500 text-slate-900 flex items-center justify-center text-[10px] font-black; }
+  .btn-icon-b { @apply w-4 h-4 rounded-full bg-rose-500 text-slate-900 flex items-center justify-center text-[10px] font-black; }
+  .btn-icon-x { @apply w-4 h-4 rounded-full bg-blue-500 text-slate-900 flex items-center justify-center text-[10px] font-black; }
+  .btn-icon-y { @apply w-4 h-4 rounded-full bg-yellow-500 text-slate-900 flex items-center justify-center text-[10px] font-black; }
+}
+
+
+@layer components {
+  .btn-icon-a, .btn-icon-b, .btn-icon-x, .btn-icon-y, .xbox-prompt {
+    
+  }
+}
+
+@layer components {
+  .btn-icon-lb, .btn-icon-rb {
+    @apply h-4 px-1.5 rounded-full bg-slate-800 text-white flex items-center justify-center text-[9px] font-black tracking-widest;
+  }
+}

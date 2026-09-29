@@ -1,0 +1,14 @@
+{
+  "collections": {
+    "cloud_files": {
+      "id": { "type": "string", "description": "Unique ID" },
+      "name": { "type": "string", "description": "Filename" },
+      "type": { "type": "string", "description": "file or directory" },
+      "size": { "type": "number", "description": "File size in bytes" },
+      "content": { "type": "string", "description": "Text content for small files" },
+      "lastModified": { "type": "string", "description": "ISO timestamp" },
+      "extension": { "type": "string", "description": "File extension" },
+      "parentPath": { "type": "string", "description": "Parent directory path" }
+    }
+  }
+}

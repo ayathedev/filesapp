@@ -1,0 +1,8 @@
+{
+  "name": "Files",
+  "description": "A clean, modern file manager inspired by Android's default file explorer with a bright, high-contrast light theme.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
